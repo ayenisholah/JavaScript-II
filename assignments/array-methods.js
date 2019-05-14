@@ -63,9 +63,14 @@ runners.forEach(function(currentItem){
 })
     console.log(fullName);
 
+// const full_name = runners.forEach(currentItem => `${currentItem.first_name} ${currentItem.last_name}`);
+// fullName.push(full_name);
+// console.log(fullName);
 // ==== Challenge 2: Use .map() ====
 // The event director needs to have all the runner's first names converted to uppercase because the director BECAME DRUNK WITH POWER. Convert each first name into all caps and log the result
 let allCaps = [];
+const upperCaseFirstName = runners.map(currentItem => currentItem.first_name.toUpperCase());
+allCaps.push(upperCaseFirstName)
 console.log(allCaps); 
 
 // ==== Challenge 3: Use .filter() ====
