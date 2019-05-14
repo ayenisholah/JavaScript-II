@@ -1,6 +1,27 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
+let nigeriaPopulation = "196M";
+
+function nigeria() {
+  const population = 190000000;
+  console.log(`The population of Nigeria is: ${population}`)
+  
+  function lagos() {
+    const governor = 'Ambode'
+    console.log(`The governor of Lagos state is: ${governor} `);
+
+    function ikeja() {
+      const mayor = 'Shola'
+      console.log(`${mayor} and ${governor} had `)
+    }
+    ikeja()
+  }
+  lagos()
+}
+nigeria()
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
